@@ -23,6 +23,8 @@ const ContainerEstilizado = styled.div`
 const App = () => {
 
   const [userName, setUserName] = useState('');
+  const [selectedLevel, setSelectedLevel] = useState('');
+  
 
   return (
     <>
@@ -31,8 +33,8 @@ const App = () => {
         <ContainerEstilizado>
           <EstilosGlobais />
           <Routes>
-            <Route path='/' element={<Home userName={userName} cadastreName={setUserName}/>} />
-            <Route path='/game' element={<Game/>}/>
+            <Route path='/' element={<Home userName={userName} cadastreName={setUserName} setSelectedLevel={setSelectedLevel}/>} />
+            <Route path='/game' element={<Game level={selectedLevel} />}/>
             <Route path='/pontuacao' element={<Pontuacao/>}/>
           </Routes>
         </ContainerEstilizado>

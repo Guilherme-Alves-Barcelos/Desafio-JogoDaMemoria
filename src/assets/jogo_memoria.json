@@ -1,0 +1,126 @@
+[
+    {
+        "id": 1,
+        "imageName": "src/assets/cards/ampharos.png"
+    },
+    {
+        "id": 2,
+        "imageName": "src/assets/cards/arcanine.png"
+    },
+    {
+        "id": 3,
+        "imageName": "src/assets/cards/baxcalibur.png"
+    },
+    {
+        "id": 4,
+        "imageName": "src/assets/cards/bulbasaur.png"
+    },
+    {
+        "id": 5,
+        "imageName": "src/assets/cards/charmander.png"
+    },
+    {
+        "id": 6,
+        "imageName": "src/assets/cards/cyclizar.png"
+    },
+    {
+        "id": 7,
+        "imageName": "src/assets/cards/dondozo.png"
+    },
+    {
+        "id": 8,
+        "imageName": "src/assets/cards/eevee.png"
+    },
+    {
+        "id": 9,
+        "imageName": "src/assets/cards/entei.png"
+    },
+    {
+        "id": 10,
+        "imageName": "src/assets/cards/espathra.png"
+    },
+    {
+        "id": 11,
+        "imageName": "src/assets/cards/flaaffy.png"
+    },
+    {
+        "id": 12,
+        "imageName": "src/assets/cards/fuecoco.png"
+    },
+    {
+        "id": 13,
+        "imageName": "src/assets/cards/growlithe.png"
+    },
+    {
+        "id": 14,
+        "imageName": "src/assets/cards/hawlucha.png"
+    },
+    {
+        "id": 15,
+        "imageName": "src/assets/cards/koraidon.png"
+    },
+    {
+        "id": 16,
+        "imageName": "src/assets/cards/lucario.png"
+    },
+    {
+        "id": 17,
+        "imageName": "src/assets/cards/mimikyu.png"
+    },
+    {
+        "id": 18,
+        "imageName": "src/assets/cards/miraidon.png"
+    },
+    {
+        "id": 19,
+        "imageName": "src/assets/cards/murkrow.png"
+    },
+    {
+        "id": 20,
+        "imageName": "src/assets/cards/ninetales.png"
+    },
+    {
+        "id": 21,
+        "imageName": "src/assets/cards/pawmot.png"
+    },
+    {
+        "id": 22,
+        "imageName": "src/assets/cards/pelipper.png"
+    },
+    {
+        "id": 23,
+        "imageName": "src/assets/cards/pikachu.png"
+    },
+    {
+        "id": 24,
+        "imageName": "src/assets/cards/quaquaval.png"
+    },
+    {
+        "id": 25,
+        "imageName": "src/assets/cards/quaxly.png"
+    },
+    {
+        "id": 26,
+        "imageName": "src/assets/cards/ravavroom.png"
+    },
+    {
+        "id": 27,
+        "imageName": "src/assets/cards/smoliv.png"
+    },
+    {
+        "id": 28,
+        "imageName": "src/assets/cards/spidops.png"
+    },
+    {
+        "id": 29,
+        "imageName": "src/assets/cards/sprigatito.png"
+    },
+    {
+        "id": 30,
+        "imageName": "src/assets/cards/squirtle.png"
+    },
+    {
+        "id": 31,
+        "imageName": "src/assets/cards/tinkaton.png"
+    }
+]

@@ -45,7 +45,7 @@ const BotaoEstilizado = styled.button`
     background-color: #0a0ac4;
 `
 
-const Home = ({ userName, cadastreName }) => {
+const Home = ({ userName, cadastreName, setSelectedLevel }) => {
 
     const [name, setName] = useState('');
     const [level, setLevel] = useState('');
@@ -55,7 +55,8 @@ const Home = ({ userName, cadastreName }) => {
         event.preventDefault();
         if (name && level) {
             cadastreName(name, level);
-            navigate('/Game');
+            setSelectedLevel(level); // Passando o nível selecionado para o componente App
+            navigate('/game', { state: { userName: name } }); // Corrigindo a rota
             setName('');
             setLevel('');
         } else {
@@ -67,22 +68,17 @@ const Home = ({ userName, cadastreName }) => {
         setLevel(event.target.value);
     };
 
-    const handleNameChange = (value) => {
-        setName(value);
-    };
-
     return (
         <CardEstilizado onSubmit={toSaveFormName} >
             <TituloCard>
                 Olá, Bem-Vindo {userName}!
             </TituloCard>
-            <CampoTexto 
-            
-            value={name} 
-            toChanged={handleNameChange}
-            
+            <CampoTexto
+                placeholder={'Digite seu nome'}
+                value={name}
+                toChanged={(value) => setName(value)}
             />
-            <TextoLevel>Escolha o nível:</TextoLevel>
+            <TextoLevel><strong>Escolha o nível:</strong></TextoLevel>
             <SelectLevel value={level} onChange={handleLevelChange} >
                 <option ></option>
                 <option value="Fácil">Fácil</option>

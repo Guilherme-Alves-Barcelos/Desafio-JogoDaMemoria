@@ -7,7 +7,7 @@ const CampoEstilizado = styled.input`
     margin-left: 10px;
 `
 
-const CampoTexto = ({ value, toChanged, mandatory }) => {
+const CampoTexto = ({ value, toChanged, mandatory, placeholder }) => {
 
     const toTyping = (event) => {
         toChanged(event.target.value)
@@ -15,7 +15,7 @@ const CampoTexto = ({ value, toChanged, mandatory }) => {
 
     return (
         <CampoEstilizado
-            placeholder="Digite seu nome"
+            placeholder={placeholder}
             value={value}
             onChange={toTyping}
             required={mandatory}
