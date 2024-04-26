@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from "./componentes/Menu";
 import Pontuacao from "./componentes/Pages/Pontuacao/index.jsx";
-import Game from "../src/componentes/Pages/Game/index.jsx";
+import Game from "/src/componentes/Pages/Game/index.jsx";
 
 
 const ContainerEstilizado = styled.div`
@@ -25,7 +25,6 @@ const App = () => {
   const [userName, setUserName] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
   
-
   return (
     <>
       <BrowserRouter>
@@ -34,8 +33,8 @@ const App = () => {
           <EstilosGlobais />
           <Routes>
             <Route path='/' element={<Home userName={userName} cadastreName={setUserName} setSelectedLevel={setSelectedLevel}/>} />
-            <Route path='/game' element={<Game level={selectedLevel} />}/>
-            <Route path='/pontuacao' element={<Pontuacao/>}/>
+            <Route path='/game' element={<Game userName={userName} level={selectedLevel} />}/>
+            <Route path='/pontuacao' element={<Pontuacao  userName={userName} level={selectedLevel}  />}/>
           </Routes>
         </ContainerEstilizado>
       </BrowserRouter>
